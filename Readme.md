@@ -7,32 +7,12 @@
 <p align="center">
 A lifeline in Emergencies
 <br/>
-<br/>
-<a href="https://github.com/ShaanCoding/makeread.me/wiki"><strong>Explore the docs »</strong></a>
-<br/>
-<br/>
-<a href="https://www.makeread.me/">View Demo .</a>  
-<a href="https://github.com/ShaanCoding/makeread.me/issues/new?labels=bug&amp;template=bug_report.md">Report Bug .</a>
-<a href="https://github.com/ShaanCoding/makeread.me/issues/new?labels=enhancement&amp;&template=feature_request.md">Request Feature</a>
-</p>
+
 </div>
 
-![Contributors](https://img.shields.io/github/contributors/ShaanCoding/makeread.me?color=dark-green) ![Issues](https://img.shields.io/github/issues/ShaanCoding/makeread.me) ![License](https://img.shields.io/github/license/ShaanCoding/makeread.me)
 
-## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
-- [Notice](#notice)
+
 
 ## About The Project
 
