@@ -1,11 +1,11 @@
 <br/>
 <div align="center">
 <a href="https://github.com/ShaanCoding/makeread.me">
-<img src="images/logo.png" alt="Logo" width="80" height="80">
+<img src="assets/images/git-logo.png" alt="Logo" width="80" height="80">
 </a>
-<h3 align="center">makeread.me</h3>
+<h3 align="center">Quick-Aid</h3>
 <p align="center">
-An awesome ReadMe Generator to Jumpstart your Projects!
+A lifeline in Emergencies
 <br/>
 <br/>
 <a href="https://github.com/ShaanCoding/makeread.me/wiki"><strong>Explore the docs »</strong></a>
@@ -36,31 +36,37 @@ An awesome ReadMe Generator to Jumpstart your Projects!
 
 ## About The Project
 
-![Screenshot](images/demo.gif)
+<!-- ![Screenshot](images/demo.gif) -->
 
-One of the challenges with building and contributing to open source software is that while many projects have amazing functionalities, they often miss out on reaching a wider audience due to lack of clear and user-friendly installation instructions. In addition, lack of efficient showcase of their use cases also contribute to the lower reach of these projects.
+QuickAid empowers individuals during medical emergencies by providing instant, step-by-step first aid guidance, virtual healthcare checkups, intelligent medicine scanning, dynamic injury detection, and rapid SOS signaling—even when connectivity is limited.
 
-While there are ReadME templates that can help address this, the process of manually filling out these templates can be time-consuming and tedious. That&#39;s where our project makeread.me comes in.
 
-Introducing makeread.me, an automated ReadMe Generator that can revolutionize how you create your project documentation. It is designed to:
+Easy-to-Follow First Aid Guidance:
 
-- Save your valuable time enhancing your focus on development,
-- Automate redundant tasks, and,
-- Implement DRY (Don&#39;t Repeat Yourself) principles to your documentation.
+- Visual images, videos, and an AI chatbot deliver clear,step-by-step instructions for injuries (dog bites, choking,wounds, etc.).
+- All guides are available offline, making it ideal for rural and remote areas.
 
-It&#39;s free, open-source, and highly customizable. Feel free to modify our templates to fit your needs. If you find that a particular component is missing, you are more than welcome to contribute and expand the project.
+Virtual Healthcare Checkups:
 
-We&#39;ve made it easy for you to contribute to the project by using Nunjucks and JSON templates for programmatic mapping. Enjoy the benefits of clear and concise project documentation with makeread.me!
+- Users can book healthcare sessions within the app.
+- Doctors conduct virtual consults directly through QuickAid, with fees applied as needed.
+
+AI-Medicine Checker:
+
+- Users snap a photo of a medicine packet label.
+- The app scans and informs them about the medicine’s effective use and potential side effects to prevent misuse.
+
+Dynamic Injury Detector (AI-Powered): 
+
+- Analyzes uploaded images of injuries to assess wound severity and suggest immediate first aid easures.
 
 ### Built With
 
 This project was built with the following technologies:
 
-- [Next.js](https://nextjs.org/)
-- [React](https://react.dev/)
-- [Shadcn/ui](https://ui.shadcn.com/)
-- [React Hook Form](https://react-hook-form.com/)
-- [Typescript](https://www.typescriptlang.org/)
+- [Expo](https://expo.dev/)
+- [React-Native](https://reactnative.dev/)
+- [NativeWind (TailwindCSS)](https://www.nativewind.dev/)
 - [Express](https://expressjs.com/)
 
 ## Getting Started
@@ -70,25 +76,32 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This project requires Yarn to be installed in your system. If you don&#39;t have it installed, you can follow these steps:
+This project requires Node to be installed in your system. If you don&#39;t have it installed, you can follow these steps:
 
-- Install Yarn globally using npm (Node Package Manager). Open your terminal and run:
+- Install Node globally using winget command. Open your terminal and run:
 
-  ```sh
-  npm install -g yarn
-  ```
+    ```sh
+    winget install Schniz.fnm
+    ```
 
-  Please ensure that you have Node.js and npm installed before running Yarn.
+- Download and install Node.js using fnm:
 
-- Verify that Yarn has been installed on your machine by running the following command in your terminal:
+    ```sh
+    fnm install 18
+    ```
 
-  ```sh
-  yarn --version
-  ```
+- Verify the Node.js version:
 
-  If Yarn has been installed correctly, your terminal should display the version of Yarn installed on your machine.
+    ```sh
+    node -v # Should print "v18.20.7".
+    ```
 
-Now you are ready to use Yarn for managing and versioning your project dependencies!
+- Verify npm version:
+
+    ```sh
+    npm -v # Should print "10.8.2".
+    ```
+
 
 ### Installation
 
@@ -97,71 +110,29 @@ Please follow the following steps for successful installation:
 1. **Clone the Repository:** Get started by cloning the repository to your local machine.
 
    ```
-   https://github.com/ShaanCoding/makeread.me
+   https://github.com/allindiacoderlife/Quick-Aid-React-Native.git
    ```
-
-2. **Install Frontend Packages:** Navigate to the &quot;/frontend&quot; directory and install the required yarn packages by executing the following command in your terminal:
+2. **Install NodeJs Packages:** Install the required npm packages by executing the following command in your terminal:
 
    ```sh
-   yarn install
+   npm i
    ```
 
-3. **Install Backend Packages:** Similarly, navigate to the &quot;/backend&quot; directory and install the required yarn packages by executing the following command in your terminal:
+3. **Set Up Environment:**
 
-   ```sh
-   yarn install
-   ```
-
-4. **Set Up Environment:**
-
-   - In the &quot;/backend&quot; directory, copy the content of &quot;.env.example&quot; file and create a new file named &quot;.env&quot;. Adjust the environment variables according to your requirements or you can leave them as it is.
-
-   - Navigate to &quot;frontend/api/generated/readMeGenerator.ts&quot; and set the BASE parameter to your backend API route. For instance, if you are running backend on your local server at port 8080, you should set:
+   - In the &quot;root&quot; directory, copy the content of &quot;.env.example&quot; file and create a new file named &quot;.env&quot;. Adjust the environment variables according to your requirements or you can leave them as it is.
 
      ```javascript
      BASE: "http://localhost:8080/api";
      ```
 
-5. **Run the Backend:** Navigate to &quot;/backend&quot; directory and type the following command in your terminal to run your backend server:
+4. **Run the Project:** Navigate to &quot;root&quot; directory and type the following command in your terminal to run your backend server:
 
    ```sh
-   yarn dev
-   ```
-
-6. **Run the Frontend:** Finally, navigate to &quot;/frontend&quot; directory and type the following command in your terminal to run your frontend server:
-
-   ```sh
-   yarn dev
+   npm run start # Expo Mode
    ```
 
    Now, your application should be successfully up and running!
-
-## Roadmap
-
-The roadmap includes both completed and future goals. Here&#39;s what we have accomplished and looking forward to:
-
-- [x] Add backend swagger generation
-- [x] Add backend
-- [x] Set up CI/CD on railway
-- [x] Allow dynamic input field generation based off a JSON file
-  - [x] Textarea
-  - [x] Input
-  - [x] Objects
-  - [x] Array
-- [x] Allow users to set the order of components or delete them
-- [x] Allow templating via Nunjucks
-- [x] Add Plausible Analytics
-- [x] Add old readme generator template
-- [ ] Add more templates
-- [ ] Move rendering logic to the backend with debounce
-- [x] Replace useEffect with react query
-- [ ] Add caching
-- [ ] Write up README best practice articles
-- [ ] Avoid key collisions when using non-unique-names as Ids in templates
-
-We continue our commitment to improving and expanding the capabilities of makeread.me to provide an efficient and seamless readme generation experience to our users.
-
-See the [open issues](https://github.com/ShaanCoding/makeread.me/issues) for a full list of proposed features (and known issues).
 
 ## Contributing
 
@@ -170,30 +141,25 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag &quot;enhancement&quot;.
 Don&#39;t forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m &#39;Add some AmazingFeature&#39;`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Fork the Project:** Click on the "Fork" button at the top right corner of the repository page to create a copy of the repository in your GitHub account.
+2. **Create your Feature Branch:** Open your terminal and navigate to your local repository. Create a new branch for your feature using the command:
+  ```sh
+  git checkout -b feature/AmazingFeature
+  ```
+3. **Commit your Changes:** Make your changes and commit them with a descriptive message:
+  ```sh
+  git commit -m 'Add some AmazingFeature'
+  ```
+4. **Push to the Branch:** Push your changes to the feature branch in your forked repository:
+  ```sh
+  git push origin feature/AmazingFeature
+  ```
+5. **Open a Pull Request:** Go to the original repository on GitHub and click on the "New Pull Request" button. Select your feature branch to compare and submit the pull request.
 
 ## License
 
 Distributed under the Mozilla Public License 2.0 License. See [Mozilla Public License 2.0 License](https://github.com/ShaanCoding/makeread.me/blob/main/LICENSE.md) for more information.
 
-## Contact
 
-If you have any questions or suggestions, feel free to reach out to us:
 
-- Raise an issue on the repository: [GitHub Repository](https://github.com/ShaanCoding/makeread.me)
-- Connect with us on Twitter: [@ShaanCoding](https://twitter.com/ShaanCoding)
 
-## Acknowledgments
-
-A special thanks to the following for their contributions, support and inspiration:
-
-- [makeread.me](https://github.com/ShaanCoding/makeread.me)
-- [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
-
-## Notice
-
-This ReadMe was generated using [makeread.me](https://www.makeread.me/) 🚀
